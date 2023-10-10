@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperatura</h1>
+    </header>
+    <section>
+        <div>
+            <p>Temperatura: <input type="number" name="txttemp" id="txttemp"></p>
+            <p>
+                <input type="radio" name="txttipo" id="cf" checked>
+                <label for="cf">Celsius para Fahrenheit</label>
+            </p>
+            <p>
+                <input type="radio" name="txttipo" id="fc">
+                <label for="fc">Fahrenheit para Celsius</label>
+            </p>
+            <p>
+                <input type="radio" name="txttipo" id="ck">
+                <label for="ck">Celsius para Kelvin</label>
+            </p>
+            <p>
+                <input type="radio" name="txttipo" id="kc">
+                <label for="kc">Kelvin para Celsius</label>
+            </p>
+            <p>
+                <input type="radio" name="txttipo" id="fk">
+                <label for="fk">Fahrenheit para Kelvin</label>
+            </p>
+            <p>
+                <input type="radio" name="txttipo" id="kf">
+                <label for="kf">Kelvin para Fahrenheit</label>
+            </p>
+            <p>
+                <input id="botao" type="button" value="Converter" onclick="converter()">
+            </p>
+        </div>
+        <p>Resultado:</p>
+        <div id="res">
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
